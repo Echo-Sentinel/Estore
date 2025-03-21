@@ -209,3 +209,35 @@ html {
         display: block;
     }
 }
+#hero{
+    width: 100%;
+    height: 600px;
+}
+.body_hero{
+    background-color: #C8EBFF;
+    font-family: "Yellowtail", cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inf{
+    font-size: 50px;
+    padding-right: 250px;
+}   
+.inf p{
+    font-size: 25px;
+}
+.sn_button{
+    width: 140px;
+    height: 60px;
+    border: none;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #2577FD;
+    border-radius: 40px;
+}
+.sn_button:hover{
+    background-color: #00A9F4;
+}
