@@ -324,75 +324,82 @@
       font-size: 1.2rem;
     }
   }
-  #sbc {
+  
+  .latest-products {
     width: 100%;
-    padding: 4rem 0;
-    background-color: #f9f9f9;
+    padding: 50px 0;
+    background-color: #fff;
   }
   
-  .shop_header {
+  .latest-products h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .product-item {
+    width: 30%; 
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .product-item img {
     width: 100%;
     height: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
   }
   
-  .shop_header h2 {
-    font-size: 4rem;
-    text-align: center;
+  .product-item h3 {
+    font-size: 1.4rem;
     color: #333;
+    margin-bottom: 10px;
   }
   
-  .shop_img {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; 
+  .stars {
+    color: #FFD700;
+    margin-bottom: 15px;
   }
   
-  .shop_item {
-    width: 400px;
-    height: 260px;
-    font-size: 2rem;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  
-  .shop_item span {
-    position: relative;
-    z-index: 2;
+  .product-item p {
+    font-size: 1.4rem;
+    color: #ff3368;
     font-weight: bold;
-    font-size: 2.5rem;
   }
   
-  .shop_item::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+  @media (max-width: 992px) {
+    .product-item {
+      width: 45%; 
+    }
   }
   
-  .shop_item:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  }
   
-  .owmen {
-    background-image: url(../images/cat1.jpg.webp);
-  }
+  @media (max-width: 576px) {
+    .products-container {
+      gap: 20px;
+    }
   
-  .winter_clth {
-    background-image: url(../images/cat2.jpg.webp);
-  }
+    .product-item {
+      width: 100%; 
+    }
   
-  .man_clth {
-    background-image: url(../images/cat3.jpg.webp );
-  }
+    .latest-products h2 {
+      font-size: 2.2rem;
+    }
   
+    .product-item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .product-item p {
+      font-size: 1.2rem;
+    }
+  }
+ 
