@@ -1,0 +1,10 @@
+#prdct_list{
+    width: 100px;
+    height: 300px;
+}
+.p-l{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(../images/category.jpg.webp);
+}
